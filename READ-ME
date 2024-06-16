@@ -8,4 +8,5 @@ FEATURES:
 -Search
 -----------
 DESCRIPTION:
-using node.js and mongoDB compass, this app let you manage as many contacts
+using node.js and mongoDB compass, this app let you manage as many contacts as you need.
+This project was done for school and I thought i would share it on here for any beginners out there.
