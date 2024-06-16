@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liste de Contactes</title>
+    <link
+      rel="stylesheet"
+      target="_blank"
+      href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <i class="fas fa-bars sidebarBtn" onclick="toggleSidebar()"></i>
+        <i class="title" style="cursor: text">Mes Contactes</i>
+        <i class="fas fa-user-plus addIcon" onclick="addContactTemplate()"></i>
+      </div>
+    </nav>
+    <div class="bodyContainer">
+      <div class="sidebar hidden">
+        <div class="searchInput">
+          <i class="fas fa-search"></i>
+          <input
+            class="search"
+            type="text"
+            name="search"
+            placeholder="search contact"
+          />
+          <i class="fas fa-times btnClear"></i>
+        </div>
+        <ul class="searchResult"></ul>
+      </div>
+      <div class="mainContainer"></div>
+    </div>
+    <footer></footer>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,339 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+html body{
+    margin:0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+nav{
+    background-color: rgb(44, 44, 44);
+    padding: 10px;
+}
+
+nav div{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+nav i{
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+nav i:hover{
+    cursor: pointer;
+}
+
+.addIcon{
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.addIcon:hover{
+    background-color: rgb(25, 25, 25);
+}
+
+.addIcon:active{
+    background-color: rgb(40, 40, 40);
+}
+
+.title{
+    font-style: normal;
+}
+
+.mainContainer {
+    position: absolute;
+    align-items: center;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: rgb(231, 231, 231);
+    width: 80%;
+  }
+
+
+/*Cellules de contactes non complètes*/
+
+.contact{
+    display: inline-block;
+    list-style: none;
+    background-color: rgb(204, 204, 204);
+    border-radius: 15px;
+    height: 50px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+}
+
+.contact:hover{
+    background-color: rgb(160, 160, 160);
+}
+
+.contact:active{
+    background-color: rgb(191, 191, 191);
+}
+
+.contact div {
+    display: inline-block;
+}
+
+.userIcon{
+    position: relative;
+    bottom: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.contact-info{
+    position: relative;
+    padding: 10px;
+    bottom: 4px;
+}
+
+/*Add window GUI*/
+
+.addNavBar {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+
+  
+.addContactContainer li{
+    list-style: none;
+}
+
+.addContactContainer ul{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+.addContactContainer ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+.addContactContainer i{
+    position: relative;
+    bottom: 5px;
+}
+  
+  .addContactContainer li i {
+    vertical-align: middle;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .addContactContainer input[type="text"] {
+    width: calc(90%);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    vertical-align: middle;
+  }
+
+  .btnClear{
+    cursor: pointer;
+    padding: 7px 10px;
+    border-radius: 50%;
+  }
+
+  .btnClear:hover{
+    background-color:rgb(212, 212, 212);
+  }
+
+  .btnClear:active{
+    background-color:rgb(229, 229, 229);
+  }
+
+  .navBarBtn{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  .navBarBtn:hover{
+    background-color:rgb(212, 212, 212);
+  }
+
+/*full contact window styles*/
+
+.contactDataContainer{
+    position: absolute;
+    background-color: rgb(231, 231, 231);
+    padding: 10px;
+    border-radius: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bigIcon{
+    font-size: 45px;
+    padding: 10px;
+}
+
+.nameAndProfileIcon div{
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.phoneData{
+    margin: 30px;
+    display: block;
+    position: relative;
+}
+
+.phoneData div{
+    display: inline-block;
+    padding: 5px;
+}
+
+.emailData{
+    margin: 30px;
+    display: block;
+    position: relative;
+}
+
+.emailData div{
+    display: inline-block;
+    padding: 5px;
+}
+
+.phoneNumber div{
+    display: inline-block;
+    padding: 10px;
+}
+
+.navBarIcons div{
+    display: inline-block;
+}
+
+.deleteEditIcons{
+    display: block;
+    position: absolute;
+    right: 0;
+    padding: 5px 10px;
+}
+
+.deleteEditIcons i:hover{
+    color: #7b7b7b;
+    cursor: pointer;
+}
+
+/*SIDEBAR styles*/
+
+.sidebar{ 
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background-color: #efefef;
+    border-right: 4px solid rgb(209, 209, 209);
+
+}
+
+.hidden {
+    display: none;
+  }
+
+.bodyContainer{
+    display: inline-block;
+    height: 100%;
+}
+
+.sidebar.hidden + .mainContainer {
+    margin-left: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+  
+  .sidebar:not(.hidden) + .mainContainer {
+    left: 50px;
+    width: 70%;
+  }
+
+  .searchInput{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-55%);
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .searchInput input{
+    padding: 10px;
+  }
+
+  .searchInput i{
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  .searchInput i:hover{
+    background-color: #cecece;
+  }
+
+  .searchInput i:active{
+    background-color: #ffffff;
+  }
+
+  .sidebarBtn{
+    border-radius: 50%;
+  }
+
+  .sidebarBtn:hover{
+    background-color: rgb(25, 25, 25);
+  }
+
+  .sidebarBtn:active{
+    background-color: rgb(40, 40, 40);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  background-color: #ccc;
+}
+
+.searchItem {
+  display: block;
+}
+
+.filtered {
+  display: none;
+}
+
+.searchItem:hover{
+  background-color: rgb(231, 231, 231);
+}
