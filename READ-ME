@@ -5,3 +5,7 @@ FEATURES:
 -Delete
 -Update
 -Get
+-Search
+-----------
+DESCRIPTION:
+using node.js and mongoDB compass, this app let you manage as many contacts
